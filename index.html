@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Web App</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div class="main-div">
+    <div class="music-container">
+        <h2 id="title">Let me Down</h2>
+        <h3 id="artist">Alec Benjamin</h3>
+        <div class="img-container">
+           <img src="images/song_1.jpg" alt="">
+        </div>
+        <audio src="music/song_1.mp3 "></audio>
+
+        <!-- progress bar -->
+        <div class="progressbar-container" id="progress-container">
+            <div class="progress-duration-meter">
+                <div id="current_time">0:00</div>
+                <div id="duration">2:49</div>
+            </div>
+            <div class="progress_div" id="progress_div">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+
+        <!-- controls-->
+        <div class="music-controls">
+            <i class="fa-solid fa-backward" id="prev" title="Previous"></i>
+            <i class="fa-solid fa-play main-button" id="play" title="Play"></i>
+            <i class="fa-solid fa-forward" id="next" title="Next"></i>
+
+        </div>
+    </div>
+   </div>
+
+
+    <script src="songs.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+</html>           
